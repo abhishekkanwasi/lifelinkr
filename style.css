@@ -13,7 +13,8 @@ html {
 body {
   background-color: #f1f2f4;
   color: #333;
-}.navbar {
+}
+.navbar {
     position: sticky;
     top: 0;
     z-index: 1000; /* ensures it stays on top */
@@ -25,6 +26,8 @@ body {
     background-color: #cfcfcf;
     
   }
+
+  
   
 .logo {
   font-size: 28px;
@@ -124,6 +127,21 @@ body {
     font-size: 15px;
   }
 }
+/* Default styling (desktop view) */
+
+
+
+/* Small screens: stick to bottom */
+@media (max-width: 768px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
 
 .main-section {
   display: flex;
